@@ -2,6 +2,8 @@
 #include<Windows.h>
 
 class Register_Manager {
+private:
+	HKEY hkey;
 public:
 
 	void deleteRegister(HKEY hkeyRoot) {
