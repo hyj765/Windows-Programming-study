@@ -5,7 +5,7 @@
 
 
 int main(int argc, char* argv[]) {
-	HANDLE processResourece = nullptr; // resource¸¦ °¡Á®¿Ã handle;
+	HANDLE processResourece = nullptr; // resourceÂ¸Â¦ Â°Â¡ÃÂ®Â¿Ãƒ handle;
 	PVOID remoteBuffer;
 	if (argc < 3) {
 		printf("Usage program.exe [dllpath] [pid]\n");
@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 	dllpath = argv[1];
 	FILE* file = fopen(dllpath,"r");
 	if (file == nullptr) {
-		printf("ÆÄÀÏ Á¸Àç¾ÈÇÔ \n");
+		printf("dll path error\n");
 		return 0;
 	}
 	fclose(file);
