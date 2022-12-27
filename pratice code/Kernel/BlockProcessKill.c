@@ -14,3 +14,9 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT pDrvObj, PUNICODE_STRING pRegistryPath) {
 	exit:
 		return STATUS_UNSUCCESSFUL;
 }
+
+/*
+
+sc create [driver name] binpath= [sysfile path] type= kernel start= demand 
+sc start [drvier name]
+*/
