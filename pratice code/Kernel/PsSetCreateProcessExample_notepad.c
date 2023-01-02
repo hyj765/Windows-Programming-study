@@ -9,6 +9,7 @@
 
 	eprocess  =kernel process struct
 	
+	*PSsetCreateProcessRoutine을 사용 시에 Linker option에 integritycheck가 추가되어있지 않는다면 작동하지 않음.
 */
 
 
