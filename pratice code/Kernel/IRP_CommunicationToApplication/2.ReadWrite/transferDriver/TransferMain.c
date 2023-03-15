@@ -97,7 +97,7 @@ NTSTATUS DriverEntry(PDRIVER_OBJECT pDriverObj, PUNICODE_STRING RegPath) {
 	UNICODE_STRING SymbolicName;
 
 	RtlInitUnicodeString(&DeviceName, L"\\Devices\\SAMPLEDRIVER");
-	RtlInitUnicodeString(&SymbolicName, L"\\DosDevice\\SAMPLEDRIVER");
+	RtlInitUnicodeString(&SymbolicName, L"\\DosDevices\\SAMPLEDRIVER");
 
 	pDriverObj->MajorFunction[IRP_MJ_CREATE] = CreateDisPatch;
 	pDriverObj->MajorFunction[IRP_MJ_CLOSE] = CloseDisPatch;
