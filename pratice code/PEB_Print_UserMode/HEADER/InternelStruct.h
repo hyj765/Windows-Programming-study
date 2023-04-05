@@ -2,15 +2,15 @@
 #include<Windows.h>
 
 typedef struct _PROCESS_BASIC_INFORMATION {
-	NTSTATUS ExitStatus; // Á¾·á ÄÚµå
-	PVOID PebBaseAddress; // peb blockÀÇ ÁÖ¼Ò
-	ULONG_PTR AffinityMask; // ¼±È£µµ ¸¶½ºÅ©
-	LONG BasePriority; // ÇÁ·Î¼¼½º ¿ì¼±¼øÀ§
-	ULONG_PTR UniqueProcessId;
+	NTSTATUS ExitStatus; // ì¢…ë£Œ ì½”ë“œ
+	PVOID PebBaseAddress; // peb blockì˜ ì£¼ì†Œ
+	ULONG_PTR AffinityMask; // ì„ í˜¸ë„ ë§ˆìŠ¤í¬
+	LONG BasePriority; // í”„ë¡œì„¸ìŠ¤ ìš°ì„ ìˆœìœ„
+	ULONG_PTR UniqueProcessId; // í”„ë¡œì„¸ìŠ¤ PID
 	ULONG_PTR InheritedFromUniqueProcessId;
 } PROCESS_BASIC_INFORMATION;
 
-/* ¿øº»
+/* ì›ë³¸
 typedef struct _PROCESS_BASIC_INFORMATION {
 	NTSTATUS ExitStatus;
 	PPEB PebBaseAddress;
