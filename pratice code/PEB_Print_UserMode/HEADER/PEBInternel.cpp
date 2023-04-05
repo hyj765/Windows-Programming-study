@@ -1,4 +1,4 @@
-#include"PEBInternel.h"
+#include"HEADER/PEBInternel.h"
 
 void PEBParser::GetProcessHandle(long ProcessId) {
 	hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, ProcessId);
