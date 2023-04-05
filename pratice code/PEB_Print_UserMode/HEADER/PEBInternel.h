@@ -1,7 +1,7 @@
 #pragma once
 #include<Windows.h>
 #include<iostream>
-#include"InternelStruct.h"
+#include"HEADER/InternelStruct.h"
 
 typedef NTSTATUS(WINAPI* NtQueryInformationProcessFunc)(
 	HANDLE ProcessHandle,
