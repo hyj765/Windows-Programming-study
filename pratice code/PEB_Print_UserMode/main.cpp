@@ -1,12 +1,12 @@
 #include<iostream>
 #include<Windows.h>
-#include"PEBInternel.h"
+#include"HEADER/PEBInternel.h"
 
 int main() {
 
 	PEBParser pe;
 	long pid;
-	printf("¿øÇÏ´Â process pid¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>>> ");
+	printf("Â¿Ã¸Ã‡ÃÂ´Ã‚ process pidÂ¸Â¦ Ã€Ã”Â·Ã‚Ã‡ÃÂ¼Â¼Â¿Ã¤. >>>> ");
 	std::cin >> pid;
 
 	pe.GetProcessHandle(pid);
